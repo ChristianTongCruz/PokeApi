@@ -19,13 +19,16 @@
 .pokemon-card-image :hover {
   animation: shake 0.3s linear 1;
 }
+
 @keyframes shake {
   33% {
     transform: rotate(10deg);
   }
+
   66% {
     transform: rotate(-10deg);
   }
+
   100% {
     transform: rotate(10deg);
   }
@@ -64,4 +67,7 @@
 .pokemon-card-type-info-text {
   margin-right: 10px;
   text-transform: capitalize;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
 }

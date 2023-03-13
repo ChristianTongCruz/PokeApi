@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 import "./Pokemon.css";
+import "./Pokemon_Types.css";
 
 function Pokemon({ PokemonData }) {
   return (
@@ -20,7 +21,7 @@ function Pokemon({ PokemonData }) {
           <div className="pokemon-card-type-info">
             {PokemonData.types.map((type, id) => {
               return (
-                <div className="pokemon-card-type-info-text" key={id}>
+                <div className={`pokemon-card-type-info-text ${type.type.name}`} key={id} >
                   {type.type.name}
                 </div>
               );
@@ -28,7 +29,7 @@ function Pokemon({ PokemonData }) {
           </div>
         </div>
       </div>
-    </div>
+    </div >
   );
 }
 
